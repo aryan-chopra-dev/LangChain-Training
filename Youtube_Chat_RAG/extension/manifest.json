@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Transcript Q&A",
+  "version": "1.0.0",
+  "description": "Ask questions about the current YouTube video's transcript.",
+  "permissions": ["storage", "tabs", "activeTab", "sidePanel"],
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "http://127.0.0.1:8000/*"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "action": {
+    "default_title": "YouTube Transcript Q&A"
+  }
+}

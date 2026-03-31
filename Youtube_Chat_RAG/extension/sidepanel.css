@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 12px;
+  background: #f8f9fb;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+textarea,
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+}
+
+#status {
+  font-size: 13px;
+  color: #555;
+}
+
+#answer {
+  white-space: pre-wrap;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  min-height: 120px;
+}
